@@ -42,7 +42,7 @@ Northwest University, 2025.
 
 ## Contact
 
-**Email:** zhangyefan1121@163.com
+**Email:** zhangyefan1121@163.com  jiquan-liu@nwu.edu.cn
 
 ## License
 
