@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+*.egg-info/
+.eggs/
+*.egg
+*.pyc
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# PyInstaller
+*.spec
+*.log
+*.manifest
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
+*.cache
+
+# Model files (optional - uncomment if needed)
+# *.csv
+# *.txt
