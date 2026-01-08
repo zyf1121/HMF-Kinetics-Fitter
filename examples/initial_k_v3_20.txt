@@ -1,0 +1,31 @@
+# Initial rate constants - With adsorption + No side reaction (v3_20)
+# Based on version3/20.py initial_guess
+
+# Basic reaction rate constants (13)
+k1c = 0.005
+k2c = 0.0198
+k3c = 0.04
+k1e = 0.003
+k2e = 0.0122
+k0e = 0.047
+k3e = 0.01
+k4e = 0.0427
+k5e = 0.0453
+k6e = 0.0136
+k7e = 0.001
+k8e = 0.024
+k9e = 0.0753
+
+# Adsorption/Desorption rate constants (12)
+k0a = 0.05
+k0d = 0.05
+k1a = 0.05
+k1d = 0.05
+k2a = 0.1
+k2d = 0.2
+k3a = 0.05
+k3d = 0.05
+k4a = 0.1
+k4d = 0.1
+k5a = 0.02
+k5d = 0.2

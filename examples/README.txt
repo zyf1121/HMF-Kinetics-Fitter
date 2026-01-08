@@ -16,22 +16,25 @@ The example files follow a systematic naming convention:
 
 ### Temperature Indicators
 - **60** = WITH side products (humins formation)
-  - Used for higher temperature experiments (60°C)
+  - Higher temperature experiments (60°C)
   - Includes humins as a product species
   - Additional rate constant: k_sidereaction (or kfe/kby)
 
-- **10** = WITHOUT side products (no humins formation)
-  - Used for lower temperature experiments (10°C)
+- **10, 20, 40** = WITHOUT side products (no humins formation)
+  - Lower temperature experiments (10°C, 20°C, 40°C)
   - Does not include humins in the reaction network
-  - Fewer species to track
 
 ## Available Examples
 
 | Folder | Model Type | Side Reaction | Temperature | Species Count | Rate Constants |
 |--------|-----------|---------------|-------------|---------------|----------------|
 | v2_10 | No adsorption | No | 10°C | 6 species | 13 parameters |
+| v2_20 | No adsorption | No | 20°C | 6 species | 13 parameters |
+| v2_40 | No adsorption | No | 40°C | 6 species | 13 parameters |
 | v2_60 | No adsorption | Yes | 60°C | 7 species | 14 parameters |
 | v3_10 | With adsorption | No | 10°C | 12 species | 25 parameters |
+| v3_20 | With adsorption | No | 20°C | 12 species | 25 parameters |
+| v3_40 | With adsorption | No | 40°C | 12 species | 25 parameters |
 | v3_60 | With adsorption | Yes | 60°C | 13 species | 26 parameters |
 
 ## File Structure
@@ -65,18 +68,24 @@ Each example folder contains three files:
 ### Quick Reference
 
 ```
-v2_10  → Low temp, no adsorption, no side products
-v2_60  → High temp, no adsorption, with side products (humins)
-v3_10  → Low temp, with adsorption, no side products
-v3_60  → High temp, with adsorption, with side products (humins)
+v2_10  → 10°C, no adsorption, no side products
+v2_20  → 20°C, no adsorption, no side products
+v2_40  → 40°C, no adsorption, no side products
+v2_60  → 60°C, no adsorption, with side products (humins)
+v3_10  → 10°C, with adsorption, no side products
+v3_20  → 20°C, with adsorption, no side products
+v3_40  → 40°C, with adsorption, no side products
+v3_60  → 60°C, with adsorption, with side products (humins)
 ```
 
 ## Notes
 
-- The "10" and "60" in filenames refer to typical experimental temperatures
+- The "10", "20", "40", and "60" in filenames refer to experimental temperatures (10°C, 20°C, 40°C, 60°C)
 - You can use these examples as templates for your own data
 - Adjust initial rate constants in the *_k*.txt files as needed
 - The model will automatically adjust based on your experimental time range
+- **Only 60°C datasets include side products (humins formation)**
+- 10°C, 20°C, and 40°C datasets do NOT include humins
 
 ---
 
